@@ -1,0 +1,81 @@
+.InputElement {
+  width: 100%;
+  /* height: 50%; */
+  margin: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 200%;
+  align-items: center;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+
+::placeholder {
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+
+:-ms-input-placeholder {
+  color: black;
+}
+
+.Invalid:focus {
+  outline: none !important;
+}
+
+.Invalid {
+  border: 4px solid red;
+}
+
+.Phone {
+  width: 62%;
+  float: right;
+  margin-left: 0px;
+}
+
+.Phone::-webkit-outer-spin-button, .Phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+.Phone[type=number] {
+  -moz-appearance: textfield;
+}
+
+.AreaCode {
+  width: 32%;
+  float: left;
+  margin-left: -8px;
+  /* font-size: 200%; */
+  min-width: 50px;
+  appearance: none;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .InputElement {
+    font-size: 160%;
+  }
+}
+
+@media (max-width: 600px) {
+  .InputElement {
+    width: 90%;
+    font-size: 150%;
+    align-items: center;
+  }
+  .Phone {
+    width: 50%;
+  }
+  .AreaCode {
+    width: 30%;
+    margin-left: 7%;
+    font-size: 150%;
+  }
+}

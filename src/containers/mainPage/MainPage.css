@@ -1,0 +1,40 @@
+.mainPage {
+  background-color: #fcc302;
+  width: 100vw;
+  min-height: 85vh;
+  padding: 7vw;
+  position: relative;
+  overflow: auto;
+  align-items: center;
+}
+
+.mainPage .dogImg {
+  float: right;
+  width: 45%;
+  height: 100%;
+}
+
+.mainPage .content {
+  float: left;
+  width: 55%;
+  height: 50%;
+  color: #fff;
+  font-size: 190%;
+  line-height: 150%;
+}
+
+@media (max-width: 600px) {
+  .mainPage .dogImg {
+    margin: 0 auto;
+    width: 80%;
+    float: none;
+    /* align-items: center; */
+    /* display: block; */
+  }
+  .mainPage .content {
+    margin: 0 auto;
+    float: none;
+    width: 90%;
+    font-size: 140%;
+  }
+}

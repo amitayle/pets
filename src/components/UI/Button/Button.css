@@ -1,0 +1,56 @@
+.adoptNow {
+  color: white;
+  background-color: #00bec9;
+  font-weight: 900;
+  font-size: 90%;
+  border: none;
+  border-radius: 5px;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.watchNow {
+  color: black;
+  background-color: #fcc302;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.8em;
+  border: none;
+  border-radius: 5px;
+  white-space: nowrap;
+  padding: 8px 16px;
+}
+
+.send {
+  padding: 8px 16px;
+  background-color: rgb(106, 187, 200);
+  font-family: initial;
+  font-weight: lighter;
+  font-size: 90%;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 9vh;
+  overflow: auto;
+}
+
+@media (max-width: 800px) {
+  .send {
+    bottom: 5vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .adoptNow {
+    font-size: 80%;
+  }
+  .watchNow {
+    font-size: 100%;
+  }
+  .send {
+    margin-top: 32px;
+    font-size: 80%;
+    position: static;
+  }
+}
